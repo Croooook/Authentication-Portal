@@ -1,10 +1,12 @@
 {
   "name": "Authentication-Portal",
   "version": "1.0.0",
-  
+  "homepage" : "https://Croooook.github.io/Authentication-Portal",
   "description": "",
   "main": "server.js",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build", 
     "start": "node server.js",
     
     "server": "nodemon server.js"
